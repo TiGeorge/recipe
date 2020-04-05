@@ -18,7 +18,6 @@ public class Ingredient {
     private UnitOfMeasure uom;
 
     public Ingredient() {
-
     }
 
     public Ingredient(String description, BigDecimal amount, UnitOfMeasure uom) {
