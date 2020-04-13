@@ -26,17 +26,4 @@ public class RecipeServiceImplTest {
 //        recipeService = new RecipeServiceImpl(recipeRepository);
     }
 
-    @Test
-    public void getRecipes() {
-
-        Recipe recipe = new Recipe();
-        HashSet recipesData = new HashSet();
-        recipesData.add(recipe);
-
-        when(recipeRepository.findAll()).thenReturn(recipesData);
-
-        Set<Recipe> recipes = recipeService.getRecipes();
-        assertEquals(recipes.size(), 1);
-        verify(recipeRepository, times(1)).findAll();
-    }
 }
